@@ -34,7 +34,7 @@ app.use((req, res, next) => {
     //adicionando uma variavel a todo request
     req.io = io;
 
-    return next;
+    return next();
 });
 
 /** cadastrar middlware habilitar para usar comunicação json*/
