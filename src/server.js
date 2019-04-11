@@ -52,4 +52,4 @@ app.use('/files', express.static(
 app.use(require('./routes'));
 
 /** Habilitar porta a ser escultada em real time*/
-server.listen(8000);
+server.listen(process.env.PORT || 8000);
